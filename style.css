@@ -1,0 +1,180 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+    color: #1a1a1a;
+    background: #ffffff;
+}
+
+/* NAVBAR */
+.navbar {
+    background: #0A3D91;
+    color: #fff;
+    padding: 16px 8%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar a {
+    color: #fff;
+    text-decoration: none;
+    margin-left: 22px;
+    font-weight: 500;
+}
+
+.logo {
+    font-size: 22px;
+    font-weight: 700;
+}
+
+/* HERO */
+.hero {
+    display: grid;
+    grid-template-columns: 1.2fr 1fr;
+    align-items: center;
+    padding: 80px 8%;
+    background: linear-gradient(135deg, #0A3D91 60%, #FFD200 60%);
+}
+
+.hero-left h1 {
+    font-size: 44px;
+    color: #fff;
+    margin-bottom: 15px;
+}
+
+.tagline {
+    font-size: 18px;
+    color: #f1f1f1;
+    margin-bottom: 25px;
+}
+
+.hero-buttons {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.btn-primary {
+    background: #FFD200;
+    color: #0A3D91;
+    padding: 12px 26px;
+    text-decoration: none;
+    font-weight: 700;
+    border-radius: 6px;
+}
+
+.btn-outline {
+    border: 2px solid #FFD200;
+    color: #FFD200;
+    padding: 12px 26px;
+    text-decoration: none;
+    border-radius: 6px;
+    font-weight: 600;
+}
+
+.slogan {
+    font-style: italic;
+    color: #eaeaea;
+}
+
+/* PHOTO CARD */
+.hero-right {
+    display: flex;
+    justify-content: center;
+}
+
+.photo-card {
+    background: #fff;
+    border-radius: 16px;
+    padding: 25px;
+    text-align: center;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.25);
+    max-width: 280px;
+}
+
+.photo-card img {
+    width: 100%;
+    border-radius: 12px;
+    margin-bottom: 15px;
+}
+
+.photo-card h3 {
+    color: #0A3D91;
+}
+
+.photo-card span {
+    color: #666;
+    font-size: 14px;
+}
+
+/* SECTIONS */
+.section {
+    padding: 70px 8%;
+}
+
+.section h2 {
+    color: #0A3D91;
+    margin-bottom: 20px;
+}
+
+.light-bg {
+    background: #f5f7fb;
+}
+
+/* CARDS */
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+    gap: 25px;
+}
+
+.card {
+    background: #fff;
+    padding: 28px;
+    border-radius: 14px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+}
+
+/* POINTS */
+.points li {
+    list-style: none;
+    margin: 12px 0;
+    font-size: 16px;
+}
+
+/* CONTACT */
+.contact {
+    background: #FFD200;
+    text-align: center;
+    padding: 70px 8%;
+}
+
+.contact h2 {
+    color: #0A3D91;
+    margin-bottom: 15px;
+}
+
+/* FOOTER */
+footer {
+    background: #0A3D91;
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
+
+/* RESPONSIVE */
+@media (max-width: 900px) {
+    .hero {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+
+    .hero-buttons {
+        justify-content: center;
+    }
+}
